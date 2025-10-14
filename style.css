@@ -1,0 +1,177 @@
+* {
+  background-color: black;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font: 1rem Arial, sans-serif;
+  display: grid;
+  grid-template-columns: auto auto;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.422);
+  justify-content: space-between;
+}
+#sec1 > img {
+  height: 2rem;
+  margin: 1rem 1.75rem 0.75rem 2rem;
+}
+#left,
+#right,
+#phone {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#left,
+#phone {
+  gap: 2.5rem;
+}
+#right {
+  gap: 0.75rem;
+  margin-right: 2.15rem;
+}
+#lang {
+  color: #ffffff;
+  background: none; /* url('assets/dicon.svg') no-repeat right; */
+  border: none;
+  padding: 0.35rem 0rem 0.35rem 0rem;
+  font-size: 1rem;
+  font-weight: 400;
+  appearance: none;
+}
+#langicon {
+  position: absolute;
+  margin-left: -2rem;
+  margin-top: 0.3rem;
+}
+a:hover {
+  color: #ccff00;
+}
+#btn1 {
+  background: transparent;
+  border-radius: 36px;
+  color: #ccff00;
+  padding: 0.75rem 2.25rem 0.75rem 2.25rem;
+  font-size: 1rem;
+  border: 0.075rem solid #ccff00;
+}
+#btn2,
+#btn3,
+#btn4 {
+  color: black;
+  border-radius: 36px;
+  background-color: #ccff00;
+  padding: 0.75rem 2.25rem 0.75rem 2.25rem;
+  font-size: 1rem;
+  border: 0.075rem solid #ccff00;
+}
+input[type="button"]:hover {
+  opacity: 85%;
+}
+#lang::after {
+  border: none;
+}
+#wwoffer {
+  border: none;
+  font-size: 1rem;
+  appearance: none;
+}
+@media screen and (max-width: 310px) {
+  #phone,
+  #sec8,
+  #btn1,
+  #btn2 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 440px) {
+  #phone,
+  #btn2,
+  #btn1 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 540px) {
+  #phone,
+  #btn1 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1200px) {
+  #phone {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+#main1 {
+  background-image: url('assets/bg1.jpg');
+  background-size: cover;        /* fill area, crop as needed */
+  background-position: center;   /* center the focal point */
+  background-repeat: no-repeat;
+  background-attachment: scroll;  /* or 'fixed' if you want parallax-like */
+  min-height: 100vh;             /* ensures image area is visible */
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;       /* vertical align content */
+  align-items: center;           /* horizontal align content */
+  padding: 2rem;
+}
+h1 {
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0 0 2rem 0;
+  color: #ccff00;
+}
+p {
+  margin: 0 0 2rem 0;
+  line-height: 1.65rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#footer {
+  font-size: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif; 
+  background-color: #ccff00;
+  color: #000;
+  margin: 0;
+  padding-top: 1.5rem;
+}
+#footer > span:nth-child(2) {
+  margin: 0rem 0rem 0rem 20rem;
+}
+#footer>span>span {
+  display: inline-flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  margin-left: 1.5rem;
+  justify-content: space-between;
+}
+span>a, #footer>span, #footer>span>span, span>a>i, hr {
+  background-color: transparent;
+  color: #000;
+}
+#footer>p {
+  background-color: transparent;
+  color: #000;
+  text-align: center;
+  font-size: 19rem;
+  max-width: 100%;
+  line-height: 1.4;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#hr {
+  background-color: #000;
+  color: #000;
+  margin-top: 1.5rem;
+}

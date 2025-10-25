@@ -36,7 +36,7 @@ nav {
 }
 #lang {
   color: #ffffff;
-  background: none; /* url('assets/dicon.svg') no-repeat right; */
+  background: none;     
   border: none;
   padding: 0.35rem 0rem 0.35rem 0rem;
   font-size: 1rem;
@@ -45,7 +45,7 @@ nav {
 }
 #langicon {
   position: absolute;
-  margin-left: -2rem;
+  margin-left: -1.5rem;
   margin-top: 0.3rem;
 }
 a:hover {
@@ -147,17 +147,23 @@ p {
   margin: 0;
   padding-top: 1.5rem;
 }
-#footer > span:nth-child(2) {
+#ftop > span:nth-child(1) {
+  margin-left: 2rem;
+}
+.fsa {
+  text-decoration: underline;
+}
+#ftop > span:nth-child(2) {
   margin: 0rem 0rem 0rem 20rem;
 }
-#footer>span>span {
+#footer>span>span, #socials {
   display: inline-flex;
   flex-direction: row;
   gap: 1.5rem;
   margin-left: 1.5rem;
   justify-content: space-between;
 }
-span>a, #footer>span, #footer>span>span, span>a>i, hr {
+span>a, #footer>span, #footer>span>span, #socials, span>a>i, hr {
   background-color: transparent;
   color: #000;
 }
@@ -167,11 +173,56 @@ span>a, #footer>span, #footer>span>span, span>a>i, hr {
   text-align: center;
   font-size: 19rem;
   max-width: 100%;
-  line-height: 1.4;
+  line-height: 20rem;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 #hr {
   background-color: #000;
   color: #000;
+  border: 0.01rem solid #000;
   margin-top: 1.5rem;
+}
+ul {
+  font-size: 1rem;
+  background-color: transparent;
+  font-family: Helvetica, sans-serif;
+  list-style-type: none;
+}
+li>a, li {
+  margin-bottom: 2.25vh;
+  background-color: transparent;
+  color: #000;
+}
+.lhead {
+  font-weight: 600;
+  margin-bottom: 1.75rem;
+}
+.footlist {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  margin-left: -3rem;
+  line-height: 1.75rem;
+}
+#pre, b {
+  background-color: transparent;
+  color: #000;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+#dd1, #dd2 {
+  margin-left: 0.25rem;
+}
+#tlogo {
+ color: #000;
+  background: transparent;
+  width: 1rem;
+  height: 1rem;
+}
+.flink:hover {
+  opacity: 85%;
+  color: #000;
+}
+.flink {
+  text-decoration: underline;
 }

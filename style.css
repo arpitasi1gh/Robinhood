@@ -16,7 +16,7 @@ nav {
   border-bottom: 0.1rem solid rgba(255, 255, 255, 0.422);
   justify-content: space-between;
 }
-#sec1 > img {
+#sec1 > a > img {
   height: 2rem;
   margin: 1rem 1.75rem 0.75rem 2rem;
 }
@@ -205,6 +205,7 @@ li>a, li {
   font-family: Helvetica, sans-serif;
   color: rgba(255, 255, 255, 0.359);
   word-spacing: -0.1rem;
+  background: transparent;
 }
 #p1 > span:nth-child(3) {
   font-size: 4.8rem;
@@ -226,6 +227,7 @@ li>a, li {
   color: #fffffff1;
   position: relative;
   top: 4rem;
+  background: transparent;
 }
 #p1 > span:nth-child(7) {
   font-size: 0.8rem;
@@ -233,12 +235,14 @@ li>a, li {
   color: #bfbfbf;
   position: relative;
   top: 4.5rem;
+  background: transparent;
 }
 #infoicon {
   position: absolute;
   width: 1.2rem;
   height: 1.2rem;
   margin: 0.3rem 0rem 0rem 0rem;
+  background: transparent;
 }
 #p1 > span:nth-child(9) {
   font-size: 0.8rem;
@@ -246,6 +250,7 @@ li>a, li {
   color: #bfbfbf;
   position: relative;
   top: 6rem;
+  background: transparent;
 }
 #main2 {
  height: 116vh;

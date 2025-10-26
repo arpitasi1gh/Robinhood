@@ -9,6 +9,7 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1000;
   font: 1rem Arial, sans-serif;
   display: grid;
   grid-template-columns: auto auto;
@@ -69,6 +70,11 @@ a:hover {
   font-size: 1rem;
   border: 0.075rem solid #ccff00;
 }
+#btn3 {
+  background-color: #ffffff;
+  color: black;
+  border-color: #ffffff;
+}
 input[type="button"]:hover {
   opacity: 85%;
 }
@@ -79,51 +85,6 @@ input[type="button"]:hover {
   border: none;
   font-size: 1rem;
   appearance: none;
-}
-@media screen and (max-width: 310px) {
-  #phone,
-  #sec8,
-  #btn1,
-  #btn2 {
-    position: absolute;
-    visibility: hidden;
-  }
-}
-@media screen and (min-width: 310px) and (max-width: 440px) {
-  #phone,
-  #btn2,
-  #btn1 {
-    position: absolute;
-    visibility: hidden;
-  }
-}
-@media screen and (min-width: 440px) and (max-width: 540px) {
-  #phone,
-  #btn1 {
-    position: absolute;
-    visibility: hidden;
-  }
-}
-@media screen and (min-width: 540px) and (max-width: 1200px) {
-  #phone {
-    position: absolute;
-    visibility: hidden;
-  }
-}
-#main1 {
-  background-image: url('assets/bg1.jpg');
-  background-size: cover;        /* fill area, crop as needed */
-  background-position: center;   /* center the focal point */
-  background-repeat: no-repeat;
-  background-attachment: scroll;  /* or 'fixed' if you want parallax-like */
-  min-height: 100vh;             /* ensures image area is visible */
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;       /* vertical align content */
-  align-items: center;           /* horizontal align content */
-  padding: 2rem;
 }
 h1 {
   font-size: 5.5rem;
@@ -225,4 +186,470 @@ li>a, li {
 }
 .flink {
   text-decoration: underline;
+}
+#vid1 {
+ height: 116vh;
+ width: 100%;
+ object-fit: cover;
+ margin-top: 1.1rem;
+}
+#p1 {
+  position: absolute;
+  top: 11.15rem;
+  color: white;
+  background: transparent;
+  margin-left: 12.8rem;
+}
+#p1 > span:nth-child(1) {
+  font-size: 1.3rem;
+  font-family: Helvetica, sans-serif;
+  color: rgba(255, 255, 255, 0.359);
+  word-spacing: -0.1rem;
+}
+#p1 > span:nth-child(3) {
+  font-size: 4.8rem;
+  font-family: Martina Plantijn, serif;
+  background: linear-gradient(rgb(148, 129, 76) 0%, rgb(207, 185, 125) 100%) text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 5rem;
+  word-spacing: -0.4rem;
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+  
+}
+#p1 > span:nth-child(5) {
+  font-size: 1rem;
+  font-family: Helvetica, sans-serif;
+  color: #fffffff1;
+  position: relative;
+  top: 4rem;
+}
+#p1 > span:nth-child(7) {
+  font-size: 0.8rem;
+  font-family: Helvetica, sans-serif;
+  color: #bfbfbf;
+  position: relative;
+  top: 4.5rem;
+}
+#infoicon {
+  position: absolute;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.3rem 0rem 0rem 0rem;
+}
+#p1 > span:nth-child(9) {
+  font-size: 0.8rem;
+  font-family: Helvetica, sans-serif;
+  color: #bfbfbf;
+  position: relative;
+  top: 6rem;
+}
+#main2 {
+ height: 116vh;
+ width: 100%;
+ background: url('assets/bg2.jpg') no-repeat;
+ background-position: center;
+ background-size: cover;
+ margin: 0;
+}
+#p2 {
+  position: absolute;
+  top: 75rem;
+  left: 48rem;
+  color: white;
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+}
+#p2 > span:nth-child(1) {
+  font-size: 2.8rem;
+  color: #ccff00;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+  
+}
+#p2 > span:nth-child(3) {
+  font-size: 2.8rem;
+  color: #fffff1;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 3rem;
+  line-height: 3rem;
+}
+#p2 > span:nth-child(5) {
+  font-size: 1rem;
+  color: #fffff1ed;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 4.5rem;
+  line-height: 0.45rem;
+}
+#p2 > span:nth-child(7) {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  top: 6.5rem;
+}
+#p2 > span:nth-child(9) {
+  font-size: 0.8em;
+  color: #bfbfbf;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 19.5rem;
+}
+#flink {
+  text-decoration: underline;
+  color: #bfbfbf;
+}
+#main3 {
+ height: 116vh;
+ width: 100%;
+ background: url('assets/bg3.jpg') no-repeat;
+ background-position: center;
+ background-size: cover;
+ margin: 0;
+}
+#p3 {
+  position: absolute;
+  top: 133rem;
+  left: 48rem;
+  color: white;
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+}
+#p3 > span:nth-child(1) > img, #p3 > span:nth-child(1) {
+  background: transparent; 
+}
+#featherLogo {
+  width: 2rem;
+}
+#onlyRobinhoodLogo {
+  width: 9rem;
+}
+#p3 > span:nth-child(3) {
+  font-size: 2.5rem;
+  color: #000000;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+  line-height: 3rem;
+}
+#p3 > span:nth-child(5) {
+  font-size: 1rem;
+  color: #000000ed;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 3.25rem;
+  line-height: 0.45rem;
+}
+#p3 > span:nth-child(7) {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  top:4rem;
+  font-size: 0.75rem;
+ color: #5d5959;
+}
+#p3 > span:nth-child(7) > img {
+  background: transparent;
+}
+#p3 > span:nth-child(9) {
+  background: transparent;
+}
+#p3 > span:nth-child(9) > a > input[type="button"] {
+  color: rgb(255, 255, 255);
+  border-radius: 36px;
+  background-color: #000000;
+  padding: 0.75rem 2.25rem 0.75rem 2.25rem;
+  font-size: 1rem;
+  border: 0.075rem solid #000000;
+  position: relative;
+  z-index: 1;
+  top: 5.5rem;
+}
+#p3 > span:nth-child(11) {
+  font-size: 0.8em;
+  color: #434242ed;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 19rem;
+}
+#main4 {
+ height: 116vh;
+ width: 100%;
+ background: url('assets/bg4.jpeg') no-repeat;
+ background-position: center;
+ background-size: cover;
+ margin: 0;
+}
+#p4 {
+  position: absolute;
+  top: 195rem;
+  left: 13.75rem;
+  color: white;
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+}
+#p4 > span:nth-child(1) > img, #p4 > span:nth-child(1) {
+  background: transparent; 
+}
+#p4 > span:nth-child(1) > img {
+  width: 11rem;
+}
+#strat {
+  position: relative;
+  top: -0.5rem;
+  font-size: 1.9rem;
+  font-weight: lighter;
+  background: transparent;
+}
+#p4 > span:nth-child(3) {
+  font-size: 2.5rem;
+  color: #ffffff;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 1.8rem;
+  line-height: 3rem;
+}
+#p4 > span:nth-child(5) {
+  font-size: 1rem;
+  color: #eeececed;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 4rem;
+  line-height: 0.45rem;
+}
+#p4 > span:nth-child(7) {
+  background: transparent;
+  position: relative;
+  z-index: 1;
+  top: 4.5rem;
+}
+#p4 > span:nth-child(9) {
+  background: transparent;
+}
+#p4 > span:nth-child(9) > a > input[type="button"] {
+  background-color: #ccff00;
+  color: #000;
+  border: 0.075rem solid #ccff00;
+  border-radius: 36px;
+  padding: 0.75rem 2.25rem 0.75rem 2.25rem;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+  top: 6.15rem;
+}
+#p4 > span:nth-child(11) {
+  font-size: 0.8em;
+  color: #373535;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 11.15rem;
+}
+#main5 {
+ height: 162.1vh;
+ width: 100%;
+ background-color: #1f1a12;
+ background-position: center;
+ background-size: cover;
+ margin: 0;
+}
+#p5 > span, #p5 > span > span, #p5 > span > span > img {
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+#p5 {
+  text-align: center;
+  color: white;
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+}
+#p5 > span:nth-child(1) {
+  font-size: 3rem;
+  color: #ffffff;
+  background: transparent;
+  word-spacing: -0.05rem;
+  position: relative;
+  z-index: 1;
+  top: 4.5rem;
+  line-height: 4rem;
+}
+#p5 > span:nth-child(3) > a > input[type="button"] {
+  color: rgb(255, 255, 255);
+  border-radius: 36px;
+  background-color: transparent;
+  padding: 0.75rem 2.15rem 0.75rem 2.15rem;
+  font-size: 1rem;
+  border: 0.075rem solid #ffffff;
+  position: relative;
+  z-index: 1;
+  top: 8.65rem;
+}
+#p5 > span:nth-child(5) {
+  font-size: 0.8em;
+  color: #bfbfbfed;
+  background: transparent;
+  word-spacing: -0.1rem;
+  position: relative;
+  z-index: 1;
+  top: 15rem;
+}
+#p5 > span:nth-child(5) > span:nth-child(1) {
+  position: relative;
+  right: 10.25rem;
+}
+#p5 > span:nth-child(5) > span:nth-child(3) {
+  position: relative;
+  top: -17.25rem;
+  left: 10.25rem;
+}
+#p5 > span:nth-child(5) > span:nth-child(5) {
+  position: relative;
+  top: -9.5rem;
+  right: 10.25rem;
+}
+#p5 > span:nth-child(5) > span:nth-child(7) {
+  position: relative;
+  top: -26.75rem;
+  left: 10.25rem;
+}
+#main6 {
+ height: 94.625vh;
+ width: 100%;
+ background-color: #ccff00;
+ background-position: center;
+ text-align: center;
+ margin: 0;
+}
+#p6, #p6 > span, #p6 > span > img, #p6 > span > a > input[type="button"] {
+  background-color: transparent;
+  color: #000;
+  font-family: Helvetica, sans-serif;
+}
+#p6 > span:nth-child(1) {
+  position: relative;
+  top: 4.6rem;
+  font-size: 3.05rem;
+  line-height: 3.8rem;
+  z-index: 1;
+}
+#p6 > span:nth-child(3) {
+  position: relative;
+  top: 6.3rem;
+  font-weight: 100;
+  z-index: 1;
+}
+#p6 > span:nth-child(5) > a > input[type="button"] {
+  position: relative;
+  top: 8.8rem;
+  z-index: 1;
+  background-color: #000000;
+  color: #eeeeee;
+  border: 0.075rem solid #000000;
+  border-radius: 36px;
+  padding: 0.75rem 1.9rem 0.75rem 1.9rem;
+  font-size: 1rem;
+}
+#p6 > span:nth-child(7) > img {
+  position: relative;
+  top: 13.15rem;
+  z-index: 1;
+  width: 34.5%;
+}
+#main7 {
+ height: 94.625vh;
+ width: 100%;
+ background-color: #000000;
+ background-position: center;
+ text-align: center;
+ margin: 0 0 0 0;
+}
+#p7, #p7 > span, #p7 > span > a > input[type="button"] {
+  background-color: transparent;
+  color: #000;
+  font-family: Helvetica, sans-serif;
+}
+#vid2 {
+ height: 116vh;
+ width: 100%;
+ object-fit: cover;
+}
+#p7 > span:nth-child(1) {
+  position: relative;
+  top: -33.25rem;
+  word-spacing: -0.4rem;
+  letter-spacing: -0.035rem;
+  line-height: 5rem;
+  font-size: 4.9rem;
+  font-family: Martina Plantijn, serif;
+  z-index: 1;
+  color: #ffffff;
+}
+#p7 > span:nth-child(3) > a > input[type="button"] {
+  position: relative;
+  top: -31.5rem;
+  z-index: 1;
+  border-radius: 36px;
+  font-size: 1rem;
+  background-color: #ccff00;
+  color: #000;
+  border: 0.075rem solid #ccff00;
+  padding: 0.75rem 2.1rem 0.75rem 2.1rem;
+}
+#p7 {
+  position: relative;
+
+}
+@media screen and (max-width: 310px) {
+  #phone,
+  #sec8,
+  #btn1,
+  #btn2 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 310px) and (max-width: 440px) {
+  #phone,
+  #btn2,
+  #btn1 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 440px) and (max-width: 540px) {
+  #phone,
+  #btn1 {
+    position: absolute;
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 540px) and (max-width: 1200px) {
+  #phone {
+    position: absolute;
+    visibility: hidden;
+  }
 }

@@ -20,6 +20,9 @@ nav {
   height: 2rem;
   margin: 1rem 1.75rem 0.75rem 2rem;
 }
+/* select, option {
+  text-align: center;
+} */
 #left,
 #right,
 #phone {
@@ -592,7 +595,7 @@ li>a, li {
  text-align: center;
  margin: 0 0 0 0;
 }
-#p7, #p7 > span, #p7 > span > a > input[type="button"] {
+#main7 > span, #main7 > span > a > input[type="button"] {
   background-color: transparent;
   color: #000;
   font-family: Helvetica, sans-serif;
@@ -602,7 +605,7 @@ li>a, li {
  width: 100%;
  object-fit: cover;
 }
-#p7 > span:nth-child(1) {
+#main7 > span:nth-child(2) {
   position: relative;
   top: -33.25rem;
   word-spacing: -0.4rem;
@@ -613,7 +616,7 @@ li>a, li {
   z-index: 1;
   color: #ffffff;
 }
-#p7 > span:nth-child(3) > a > input[type="button"] {
+#main7 > span:nth-child(4) > a > input[type="button"] {
   position: relative;
   top: -31.5rem;
   z-index: 1;
@@ -624,9 +627,9 @@ li>a, li {
   border: 0.075rem solid #ccff00;
   padding: 0.75rem 2.1rem 0.75rem 2.1rem;
 }
-#p7 {
-  position: relative;
-
+.lists > li > a:hover {
+  opacity: 75%;
+  color: #000;
 }
 @media screen and (max-width: 310px) {
   #phone,
